@@ -7,15 +7,20 @@
   color: inherit;
 }
 
+.container {
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: auto;
+}
+
 /* menu principal */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 40px 20px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 40px;
 }
 
 .menu {
@@ -28,4 +33,39 @@ header {
   line-height: 3.75rem;
   letter-spacing: 0.045rem;
   color: #141414;
+}
+
+/* apresentação */
+
+main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 120px;
+  padding: 60px;
+}
+
+.texto-apresentacao {
+  align-self: center;
+}
+
+h1 {
+  font-size: 4.875rem;
+  line-height: 5rem;
+  letter-spacing: 0.0487rem;
+  font-weight: 700;
+  color: #141414;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+h1::before {
+  content: url(/img/dec/detalhe.svg);
+  position: absolute;
+  z-index: -1;
+  top: -11px;
+  left: -38px;
+}
+
+.texto-apresentacao p {
+  font-size: 1.2rem;
 }
