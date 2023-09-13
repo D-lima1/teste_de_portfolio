@@ -4,7 +4,14 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: inherit;
+  color: #141414;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 120px;
+  padding: 60px;
 }
 
 .container {
@@ -32,17 +39,9 @@ header {
   font-size: 1.125rem;
   line-height: 3.75rem;
   letter-spacing: 0.045rem;
-  color: #141414;
 }
 
 /* apresentação */
-
-main {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 120px;
-  padding: 60px;
-}
 
 .texto-apresentacao {
   align-self: center;
@@ -53,7 +52,6 @@ h1 {
   line-height: 5rem;
   letter-spacing: 0.0487rem;
   font-weight: 700;
-  color: #141414;
   padding-bottom: 60px;
   position: relative;
 }
@@ -68,4 +66,89 @@ h1::before {
 
 .texto-apresentacao p {
   font-size: 1.2rem;
+}
+
+/* Experiência */
+
+.subtitulo1 h2 {
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 9rem;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  word-wrap: break-word;
+  max-width: 360px;
+}
+
+.texto-experiencia {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  max-width: 40ch;
+  padding-bottom: 60px;
+}
+
+.texto-experiencia span {
+  font-weight: 700;
+}
+
+.empresas {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 110px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+.empresas + .empresas {
+  margin-top: 20px;
+}
+
+.empresas h3, .cargo {
+  position: relative;
+  font-size: 1.187rem;
+  font-weight: 700;
+  letter-spacing: 0.059rem;
+}
+
+.empresas h3::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background-image: linear-gradient(180deg, #FFAF00 0%, #FE4D1B 53%, #E70154 100%);
+  left: -24px;
+
+}
+
+.empresas p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  max-width: 44ch;
+}
+
+.empresas ul {
+  align-self: flex-start;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.empresas ul li {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+}
+
+.data {
+  position: absolute;
+  width: 7ch;
+  text-align: right;
+  left: -97px;
+  top: 22px;
+  font-size: 0.875rem;
 }
